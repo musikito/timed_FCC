@@ -7,8 +7,9 @@ function destroyer(arr) {
   // var args = Array.from(arguments);
   // it'll give the same result
   console.log(args);
-  //remove the first arg that is our array arr using splice
-  //args.splice(0, 1);
+  // remove the first arg that is our array arr using splice
+  // splice will modify the original args variable
+  args.splice(0, 1);
   // or use slice for simplicity
   //let remover = args.slice(1);
   //console.log(remover);
