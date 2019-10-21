@@ -1,9 +1,17 @@
 function destroyer(arr) {
-  //turn the args into a full array
+  // turn the args into a full array
+  // using deconstruct
   var args = [...arguments];
+
+  // we could also use Array.from
+  // var args = Array.from(arguments);
+  // it'll give the same result
   console.log(args);
-  //remove the first arg
-  args.splice(0, 1);
+  //remove the first arg that is our array arr using splice
+  //args.splice(0, 1);
+  // or use slice for simplicity
+  //let remover = args.slice(1);
+  //console.log(remover);
   console.log(args);
   //use of filter to get the elements needed and keep the ones needed
   return arr.filter(function(value) {
