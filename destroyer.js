@@ -15,6 +15,7 @@ function destroyer(arr) {
   //console.log(remover);
   console.log(args);
   //use of filter to get the elements needed and keep the ones needed
+  // filter takes a function that takes an element
   return arr.filter(function(value) {
     return args.indexOf(value) === -1;
   });
